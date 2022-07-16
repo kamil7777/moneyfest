@@ -1,0 +1,19 @@
+.header {
+    height: 48px;
+}
+.logo {
+    width: 140px;
+    height: 37px;
+    background: url(../img/logo.png);
+}
+.nav {
+    width: 347px;
+    height: 19px;
+}
+.button {
+    width: 168px;
+    height: 48px;
+    border-radius: 16px;
+    background: $yellow;
+    border: none;
+}
