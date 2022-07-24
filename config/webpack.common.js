@@ -44,14 +44,21 @@ module.exports = {
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg)$/,
-        type: 'asset/inline',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[paths][name].[ext]',
+            },
+          },
+        ],
       },
     ],
   },
   commonPlugins: [
     new HtmlWebpackPlugin({
       template: paths.src + '/template.html',
-      title: 'JS Boilerplate',
+      title: 'MoneyFest',
       filename: 'index.html',
     }),
     new StylelintPlugin(),

@@ -16,3 +16,22 @@ const cont = document.querySelector('.container');
 cont.addEventListener('click', () => {
   elm.forEach((item) => item.classList.toggle('active'));
 }); */
+/* let count;
+function getRandom(max) {
+  let a = Math.trunc(Math.random() * max);
+  while (count === a) {
+    a = Math.trunc(Math.random() * max);
+  }
+  count = a;
+  return count;
+}
+const arr = document.querySelectorAll('.col');
+arr.forEach((item) => {
+  const div = document.createElement('div');
+
+  div.classList.add('g-0');
+  div.classList.add('pic');
+  div.style.background = `url(src/img/${getRandom(4)}.jpg)`;
+  item.append(div);
+});
+console.log(count); */

@@ -1,11 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-@import "header";
-@import "main";
-@import "footer";
-
 
 $yellow:  #FCC344;
 $grey: #F7F7F7;
@@ -15,19 +7,98 @@ $minor-text: #717171;
 $other-elm: #0FAD1F;
 $link: #8D8D8D;
 
+@import "header";
+@import "main";
+@import "footer";
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
 
+* {
+    box-sizing: border-box;
+    font-style: normal;
+}
 
+.img {
+   width: 100%;
+   height: 568px;
+   border-radius: 48px;
+}
+.navbar {
+    padding: 33px 0 38px 0;
+}
+.total_info {
+    height: 97px;
+    margin: 140px 0;
+}
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 38px;
+}
+.col-info {
+    max-width: 270px;
+    margin:0 30px 0 0;
+    padding: 0;
+}
+/* .row {
+    :last-child {
+        margin: 0;
+    }
+    padding: 0;
+} */
+.card-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    max-width: 570px;
+    height: 351px;
+    background-color: $grey;
+    border-radius: 32px;
+}
+.title {
+    width: 98px;
+    height: 26px;
+    background-color: $yellow;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline;
+}
+
+.img-responsive {
+    width: 140px;
+    height: 140px;
     
-.container {
+}
+.courses_title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.column1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    border: 2px solid $grey;
+}
+.card-body_wrp {
+    width: 360px;
+}
+/* .container {
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-}
+} */
 
-.block {
+
+
+/* .block {
     width: 100px;
     height: 100px;
     border: 1px solid rgb(103, 7, 230);
@@ -48,6 +119,6 @@ $link: #8D8D8D;
 
 .active {
     background-color: rgb(9, 89, 158);
-}
+} */
 
 

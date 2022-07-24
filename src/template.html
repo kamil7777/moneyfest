@@ -7,37 +7,157 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div class="container">
-    <header class="header">
-        <div class="logo"></div>
-        <nav class="nav"></nav>
-        <button class="button">Личный кабинет</button>
-
-
-
-
-
-
-
-
-
-
-    </header>
-    <main class="main">
-        <section class="general-screen"></section>
-        <section class="general-screen"></section>
-        <section class="general-screen"></section>
-        <section class="general-screen"></section>
-        <section class="general-screen"></section>
-        <section class="general-screen"></section>
-        <section class="general-screen"></section>
-        <section class="general-screen"></section>
-
-       </main>
-       <footer class="footer">
-
-       </footer>
-       
+    <div class="container-fluid ps-0 pe-0">
+        <img src="./src/img/frame1.jpg" class="img-fluid" alt="banner">
     </div>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <a class="navbar-brand logo" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">Курсы</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="#">Эксперты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Публикации</a>
+                </li>
+            </ul>
+                <button class="btn btn-outline-success btn btn-warning" type="submit">Личный кабинет</button>
+            </div>
+        </div>
+</nav>     
+<main class="main">
+    <section class="container ps-0 pe-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./src/img/1.jpg" class="img" alt="mountains">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/img/2.jpg" class="img" alt="mountains">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/img/3.jpg" class="img" alt="mountains">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+    </section>
+    <section class="total_info">
+        <div class="container ps-0 pe-0">
+            <div class="row justify-content-center">
+            <div class="col col-info">
+                <h2 class="total_info_count">
+                    4000+
+                </h2>
+                <p class="total_info_text">
+                    Учеников уже зарабатывают на криптовалюте
+                </p>
+            </div>
+            <div class="col col-info">
+                <h2 class="total_info_count">
+                    700+
+                </h2>
+                <p class="total_info_text">
+                    Трейдеров в закрытом инвест-комьюнити
+                </p>
+            </div>
+            <div class="col col-info">
+                <h2 class="total_info_count">
+                    6 лет
+                </h2>
+                <p class="total_info_text">
+                    Успешно обучаем людей зарабатывать
+                </p>
+            </div>
+            <div class="col col-info">
+                <h2 class="total_info_count">
+                    $ 17+ млн
+                </h2>
+                <p class="total_info_text">
+                    Под консультационным управлением
+                </p>
+            </div>
+            </div>
+          </div>
+
+    </section>
+    <section class="courses">
+        <div class="container">
+            <h2 class="courses_title">Курсы</h2>
+            <div class="row row-cols-2 g-4">
+              <div class="col">
+                <div class="card-body">
+                    <div class="card-body_wrp">
+                        <p class="card-text title">3 недели</p>
+                        <h5 class="card-title">Криптоинвестиции: успешный старт</h5>
+                        <p class="card-text">Базовые знания для новичков.Поможем разобраться с биржей, купить криптовалюту и совершить первые выгодные сделки с нуля.</p>
+                        <a href="#" class="card-link">Подробнее &#8594;</a>
+                    </div>
+                    <img src="/src/img/rocket.png" alt="rocket" class="img-responsive"/>
+                </div>
+                
+              </div>
+              <div class="col">
+                <div class="card-body">
+                    <div class="card-body_wrp">
+                        <p class="card-text title">от 2 до 8 месяцев</p>
+                        <h5 class="card-title">Мастерская трейдинга: практика и заработок</h5>
+                        <p class="card-text">Полное погружение в трейдинг: практика работы с профессиональными инструментами и стратегии для максимальной прибыли.</p>
+                        <a href="#" class="card-link">Подробнее &#8594;</a>
+                    </div>
+                    <img src="/src/img/mining.png" alt="rocket" class="img-responsive"/>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-body">
+                    <div class="card-body_wrp">
+                        <p class="card-text title">от 1 месяца</p>
+                        <h5 class="card-title">Индивидуальное сопровождение эксперта</h5>
+                        <p class="card-text">Премиальный пакет услуг. Индивидуальные уроки, постоянная связь, консультационное управление.</p>
+                        <a href="#" class="card-link">Подробнее &#8594;</a>
+                    </div>
+                    <img src="/src/img/secured.png" alt="rocket" class="img-responsive"/>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-body column1">
+                    <h5 class="card-title">Какой выбрать ?</h5>
+                    <a href="#" class="card-link">Сравнить курсы &#8594;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="general-screen"></section>
+    <section class="general-screen"></section>
+    <section class="general-screen"></section>
+    <section class="general-screen"></section> 
+    <section class="general-screen"></section>
+
+</main>
+<footer class="footer">
+</footer>    
 </body>
 </html>
